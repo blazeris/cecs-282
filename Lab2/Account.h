@@ -16,6 +16,7 @@ class Account{
 	
 		double get_balance();
 		
+		void add_interest(double rate);
 		
 };
 

@@ -1,8 +1,21 @@
 #include "Account.h"
 #include "Bank.h"
 #include<iostream>
+#include<cmath>
 
 using namespace std;
+
+void calculate_doubled_investment(Account investment, double annualRate){
+	double initial_amount = investment.get_balance();
+	double final_amount = 2 * initial_amount;
+	int months = 1;
+	while(investment.get_balance() < final_amount){
+		investment.add_interest(annualRate / 12);
+		months++;
+	}
+	cout << "It took " << months << " months for $" << initial_amount << " to double at " << annualRate << "% annual interest." << endl;
+	cout << "Account balance: $" << investment.get_balance() << endl;
+}
 
 int main(){
 	//PROBLEM 1: Testing account class
@@ -15,6 +28,15 @@ int main(){
   
    	my_account.withdraw(my_account.get_balance());  // withdraw all
    	cout << "Account balance: " << my_account.get_balance() << "\n";
+   	
+   	cout << endl;
+ 
+ 	//PROBLEM 2: Testing computing doubled investment main function
+ 	Account investment_fund(10000);
+ 	calculate_doubled_investment(investment_fund, 6);
+ 	
+ 	cout << endl;
+ 
  
  
  	//PROBLEM 3: Testing bank class
@@ -43,3 +65,5 @@ int main(){
  	
    return 0;  
 }
+
+

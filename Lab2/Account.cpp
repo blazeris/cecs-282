@@ -24,3 +24,8 @@ void Account::withdraw(double amount){
 double Account::get_balance(){
 	return balance;
 }
+
+void Account::add_interest(double rate){
+	balance *= (1 + rate/100);
+}
+
