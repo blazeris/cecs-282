@@ -31,13 +31,15 @@ int main(){
    	
    	cout << endl;
  
+ 
+ 
  	//PROBLEM 2: Testing computing doubled investment main function
  	Account investment_fund(10000);
  	calculate_doubled_investment(investment_fund, 6);
  	
  	cout << endl;
  
- 
+
  
  	//PROBLEM 3: Testing bank class
  	Bank my_bank;
