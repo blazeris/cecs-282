@@ -15,6 +15,8 @@ class Account{
 		void withdraw(double amount);
 	
 		double get_balance();
+		
+		
 };
 
 #endif
