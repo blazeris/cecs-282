@@ -1,3 +1,8 @@
+/*
+	CECS 282 Lab 2: Main for testing the Account and Bank classes
+	Team 6: Nathan Lai and Danny Nguyen
+*/
+
 #include "Account.h"
 #include "Bank.h"
 #include<iostream>
@@ -5,6 +10,7 @@
 
 using namespace std;
 
+//function that calculates and prints the time required to double given an interest rate
 void calculate_doubled_investment(Account investment, double annualRate){
 	double initial_amount = investment.get_balance();
 	double final_amount = 2 * initial_amount;
@@ -34,7 +40,11 @@ int main(){
  
  
  	//PROBLEM 2: Testing computing doubled investment main function
- 	Account investment_fund(10000);
+ 	cout << "Enter initial investment amount to find time required to double amount: ";
+ 	int investment;
+ 	cin >> investment;
+ 	
+ 	Account investment_fund(investment);
  	calculate_doubled_investment(investment_fund, 6);
  	
  	cout << endl;

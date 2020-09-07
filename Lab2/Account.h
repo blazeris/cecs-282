@@ -1,3 +1,8 @@
+/*
+	CECS 282 Lab 2, Problem 2 and 3: Account class that stores money
+	Team 6: Nathan Lai and Danny Nguyen
+*/
+
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
 
