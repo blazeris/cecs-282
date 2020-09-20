@@ -7,6 +7,7 @@
 
 using namespace std;
 
+//PROBLEM 1 AND 2
 //Reads data from a text file and adds it to array using pointers
 int readData(int * &arr){
 	int size;
@@ -20,6 +21,17 @@ int readData(int * &arr){
 	return size;
 }
 
+//PROBLEM 1 AND 2
+//Prints the array to console
+void writeToConsole(int *arr, int last){
+	cout << "Sorted array:";
+	for(int i = 0; i < last; i++){
+		cout << " " << *(arr + i);
+	}
+	cout << endl;
+}
+
+//PROBLEM 1
 //Bubble sort algorithm sorting array from pointer
 void bsort(int *arr, int last){
 	bool sorted = false;
@@ -36,15 +48,7 @@ void bsort(int *arr, int last){
 	}
 }
 
-//Prints the array to console
-void writeToConsole(int *arr, int last){
-	cout << "Sorted array:";
-	for(int i = 0; i < last; i++){
-		cout << " " << *(arr + i);
-	}
-	cout << endl;
-}
-
+//PROBLEM 2
 //Boolean function that returns true if two values are in ascending order
 int ascending(int first, int second){
 	if(first <= second){
@@ -53,6 +57,7 @@ int ascending(int first, int second){
 	return false;
 }
 
+//PROBLEM 2
 //Boolean function that returns true if two values are in descending order
 int descending(int first, int second){
 	if(first >= second){
@@ -61,6 +66,7 @@ int descending(int first, int second){
 	return false;
 }
 
+//PROBLEM 2
 //Bubble sort function, that can now sort in both ascending and descending order through the use of function pointers
 void bubble_sort(int *array, int size, int(*order)(int, int)){
 	bool sorted = false;
@@ -79,6 +85,7 @@ void bubble_sort(int *array, int size, int(*order)(int, int)){
 
 //MAIN: used for testing methods
 int main(){
+	//PROBLEM 1: Basic ascending order with bubble sort
 	cout << "Testing bsort" << endl;
 	int * arr1 = new int;
 	cout << "Reading data.txt..." << endl;
@@ -87,6 +94,9 @@ int main(){
 	bsort(arr1, size1);
 	writeToConsole(arr1, size1);
 	
+	
+	
+	//PROBLEM 2: Bubble sort with both ascending and descending order through function pointers
 	cout << endl << "Testing bubble_sort with descending function pointer" << endl;
 	int * arr2 = new int;
 	cout << "Reading data.txt..." << endl;
@@ -102,8 +112,7 @@ int main(){
 	cout << "Performing bubble sort..." << endl;
 	bubble_sort(arr3, size3, ascending);
 	writeToConsole(arr3, size3);
-	
-	
+
 	
 	return 0;
 }
