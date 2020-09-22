@@ -1,3 +1,6 @@
+// Lab 4
+// Team 6: Nathan Lai, Danny Nguyen
+
 #include<iostream>
 using namespace std;
 
