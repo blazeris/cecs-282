@@ -18,8 +18,8 @@ void bsort1(person ** persons, int n, bool s){
 	while(!done){
 		done = true;
 		for(int i = 0; i < n - 1; i++){
-			if((s && (*(persons + i))->getName() > (*(persons + i + 1))->getName()) ||
-				(!s && (*(persons + i))->getSalary() > (*(persons + i + 1))->getSalary())){
+			if((s && persons[i]->getName() > persons[i + 1]->getName()) ||
+				(!s && persons[i]->getSalary() > persons[i + 1]->getSalary())){
 					done = false;
 					order(persons + i, persons + i + 1);
 				}
@@ -34,12 +34,12 @@ void bsort2(person ** persons, int n, bool s){
 	while(!done){
 		done = true;
 		for(int i = 0; i < n - 1; i++){
-			if((s && (*(persons + i))->getName() > (*(persons + i + 1))->getName()) ||
-				(!s && (*(persons + i))->getSalary() > (*(persons + i + 1))->getSalary())){
+			if((s && persons[i]->getName() > persons[i + 1] ->getName()) ||
+				(!s && persons[i]->getSalary() > persons[i + 1] ->getSalary())){
 					done = false;
-					person temp = **(persons + i);
-					**(persons + i) = **(persons + i + 1);
-					**(persons + i + 1) = temp;
+					person temp = *persons[i];
+					*persons[i] = *persons[i + 1];
+					*persons[i + 1] = temp;
 				}
 		}
 	}
@@ -48,7 +48,7 @@ void bsort2(person ** persons, int n, bool s){
 // prints out the persons array
 void print(person** persons, int n){
 	for(int i = 0; i < n; i++){
-		cout << (*(persons + i)) -> getName() << " " << (*(persons + i)) -> getSalary() << endl;
+		cout << persons[i] -> getName() << " " << persons[i] -> getSalary() << endl;
 	}
 }
 
