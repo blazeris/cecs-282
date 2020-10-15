@@ -1,3 +1,9 @@
+/*
+	CECS 282
+	Nathan Lai
+	Lab 5
+*/
+
 #include "Matrix.h"
 
 int main(){
