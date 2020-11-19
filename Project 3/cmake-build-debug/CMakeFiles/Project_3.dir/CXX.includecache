@@ -1,0 +1,70 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CSULB Code/CECS 282 Lab/Project 3/Education.h
+string
+-
+
+D:/CSULB Code/CECS 282 Lab/Project 3/Employee.cpp
+Employee.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Employee.h
+Faculty.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Faculty.h
+PartTime.h
+D:/CSULB Code/CECS 282 Lab/Project 3/PartTime.h
+Staff.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Staff.h
+fstream
+-
+
+D:/CSULB Code/CECS 282 Lab/Project 3/Employee.h
+iostream
+-
+string.h
+-
+EmployeeInfo.h
+D:/CSULB Code/CECS 282 Lab/Project 3/EmployeeInfo.h
+vector
+-
+
+D:/CSULB Code/CECS 282 Lab/Project 3/EmployeeInfo.h
+
+D:/CSULB Code/CECS 282 Lab/Project 3/Faculty.cpp
+Faculty.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Faculty.h
+
+D:/CSULB Code/CECS 282 Lab/Project 3/Faculty.h
+Employee.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Employee.h
+Education.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Education.h
+
+D:/CSULB Code/CECS 282 Lab/Project 3/IO.cpp
+iostream
+-
+Employee.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Employee.h
+
+D:/CSULB Code/CECS 282 Lab/Project 3/PartTime.cpp
+PartTime.h
+D:/CSULB Code/CECS 282 Lab/Project 3/PartTime.h
+
+D:/CSULB Code/CECS 282 Lab/Project 3/PartTime.h
+Staff.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Staff.h
+
+D:/CSULB Code/CECS 282 Lab/Project 3/Staff.cpp
+Staff.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Staff.h
+
+D:/CSULB Code/CECS 282 Lab/Project 3/Staff.h
+string
+-
+Employee.h
+D:/CSULB Code/CECS 282 Lab/Project 3/Employee.h
+

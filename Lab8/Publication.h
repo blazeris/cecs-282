@@ -1,13 +1,12 @@
+// Nathan Lai
+// CECS 282 Lab 8
+
 #ifndef PUBLICATION_PUBLICATION_H
 #define PUBLICATION_PUBLICATION_H
 
 #include <iostream>
 
 using namespace std;
-
-// Nathan Lai
-// CECS 282 Lab 2
-
 class Publication {
 public:
 	Publication();

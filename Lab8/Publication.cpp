@@ -1,11 +1,11 @@
+// Nathan Lai
+// CECS 282 Lab 8
+
 #include "Publication.h"
 
 #include <iostream>
 
 using namespace std;
-
-// Nathan Lai
-// CECS 282 Lab 2
 
 Publication::Publication(){
 	title = "";

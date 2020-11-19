@@ -1,9 +1,9 @@
+// Nathan Lai
+// CECS 282 Lab 8
+
 #include "Digital.h"
 
 #include <iostream>
-
-//Define the functions getData to input publication, storage and  three months of sales
-//Define the function putData to display the publication, storage and three months of sales
 
 Digital::Digital():Publication(), Sale(){
 	storageCap = 0;
@@ -20,5 +20,5 @@ void Digital::getData(){
 void Digital::putData(){
 	Publication::putData();
 	Sale::putData();
-	cout << "Storage size (MB): " << storageCap;
+	cout << "Storage size (MB): " << storageCap << endl;
 }

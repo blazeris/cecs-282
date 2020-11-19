@@ -1,3 +1,6 @@
+// Nathan Lai
+// CECS 282 Lab 8
+
 #include "Sale.h"
 #include "Publication.h"
 #include "Book.h"

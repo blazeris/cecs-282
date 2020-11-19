@@ -1,0 +1,4 @@
+"C:\Users\Nathan\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\CSULB Code\CECS 282 Lab\Lab11"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/CSULB Code/CECS 282 Lab/Lab11/cmake-build-debug

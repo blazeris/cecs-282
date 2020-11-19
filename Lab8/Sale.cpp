@@ -1,5 +1,8 @@
+// Nathan Lai
+// CECS 282 Lab 8
+
 #include "Sale.h"
-//Define the function getData to input sales for three months
+
 void Sale::getData(){
 	for(int i = 0; i < 3; i++){
 		cout << "Input data for sales " << i + 1 << " month(s) ago: ";

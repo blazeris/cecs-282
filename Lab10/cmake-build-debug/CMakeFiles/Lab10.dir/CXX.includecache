@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CSULB Code/CECS 282 Lab/Lab10/gamma.cpp
+gamma.h
+D:/CSULB Code/CECS 282 Lab/Lab10/gamma.h
+iostream
+-
+
+D:/CSULB Code/CECS 282 Lab/Lab10/gamma.h
+

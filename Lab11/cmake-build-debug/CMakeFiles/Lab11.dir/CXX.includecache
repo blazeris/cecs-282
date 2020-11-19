@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CSULB Code/CECS 282 Lab/Lab11/Main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+numeric
+-
+list
+-
+
