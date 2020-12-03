@@ -10,8 +10,8 @@ using namespace std;
 
 class Staff: public Employee {
 	public:
-		//Staff();
-		//Staff(string lastName, string firstName, string idNumber, Sex s, string date, double hourlyRate);
+		Staff();
+		Staff(string lastName, string firstName, string idNumber, Sex s, string date, double hourlyRate);
 		double getHourlyRate();
 		void setHourlyRate(double hourlyRate);
 		virtual double monthlyEarning();

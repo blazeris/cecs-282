@@ -2,7 +2,7 @@
 // CECS 282 Project - Part 3
 #include "PartTime.h"
 
-/*
+
 PartTime::PartTime():Staff(){
 	hoursPerWeek = 0;
 }
@@ -11,7 +11,7 @@ PartTime::PartTime(string lastName, string firstName, string idNumber, Sex s, st
 	Staff(lastName, firstName, idNumber, s, date, hourlyRate){
 	this->hoursPerWeek = hoursPerWeek;
 }
- */
+
 
 int PartTime::getHoursPerWeek(){
 	return hoursPerWeek;

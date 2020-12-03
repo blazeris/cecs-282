@@ -11,8 +11,8 @@ class Faculty: public Employee{
 		enum Level {
 			AS, AO, FU
 		};
-		//Faculty();
-		//Faculty(string lastName, string firstName, string idNumber, Sex s, string date, Education* e, Level l);
+		Faculty();
+		Faculty(string lastName, string firstName, string idNumber, Sex s, string date, Education* e, Level l);
 		Education* getEducation();
 		Level getLevel();
 		
@@ -21,6 +21,8 @@ class Faculty: public Employee{
 		virtual double monthlyEarning();
         virtual void getData();
 		void putData();
+
+		static void testFaculty();
 	private:
 		Education* e;
 		Level l;

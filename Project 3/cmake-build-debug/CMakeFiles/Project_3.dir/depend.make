@@ -18,9 +18,13 @@ CMakeFiles/Project_3.dir/Faculty.cpp.obj: ../EmployeeInfo.h
 CMakeFiles/Project_3.dir/Faculty.cpp.obj: ../Faculty.cpp
 CMakeFiles/Project_3.dir/Faculty.cpp.obj: ../Faculty.h
 
+CMakeFiles/Project_3.dir/IO.cpp.obj: ../Education.h
 CMakeFiles/Project_3.dir/IO.cpp.obj: ../Employee.h
 CMakeFiles/Project_3.dir/IO.cpp.obj: ../EmployeeInfo.h
+CMakeFiles/Project_3.dir/IO.cpp.obj: ../Faculty.h
 CMakeFiles/Project_3.dir/IO.cpp.obj: ../IO.cpp
+CMakeFiles/Project_3.dir/IO.cpp.obj: ../PartTime.h
+CMakeFiles/Project_3.dir/IO.cpp.obj: ../Staff.h
 
 CMakeFiles/Project_3.dir/PartTime.cpp.obj: ../Employee.h
 CMakeFiles/Project_3.dir/PartTime.cpp.obj: ../EmployeeInfo.h

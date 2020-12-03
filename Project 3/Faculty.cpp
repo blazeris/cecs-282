@@ -2,18 +2,19 @@
 // CECS 282 Project - Part 3
 #include "Faculty.h"
 
-/*
+
 Faculty::Faculty():Employee(){
 	e = new Education();
 	l = AS;
 }
 
+
 Faculty::Faculty(string lastName, string firstName, string idNumber, Sex s, string date, Education* e, Level l):
 	Employee(lastName, firstName, idNumber, s, date){
-	this->e = e;
-	this->l = l;
+    this->e = e;
+    this-> l = l;
 }
-*/
+
 
 Education* Faculty::getEducation(){
 	return e;

@@ -3,50 +3,46 @@
 #include "Employee.h"
 #include "Faculty.h"
 #include "PartTime.h"
-#include "Staff.h"
 #include <fstream>
 
 int Employee::currentNum = 0;
 vector<Employee*> Employee::employees;
 
-/*
-Employee::Employee(){
-	lastName = "";
-	firstName = "";
-	idNumber = "";
-	s = Unspecified;
+void Employee::addEmployee(Employee* e){
+    employees.push_back(e);
+    currentNum++;
 }
 
-Employee::Employee(string lastName, string firstName, string idNumber, Sex s, string date){
-	this->lastName = lastName;
-	this->firstName = firstName;
-	this->idNumber = idNumber;
+Employee::Employee() = default;
+
+
+Employee::Employee(string ln, string fn, string id, Sex s, string d){
+    strncpy(lastName, ln.c_str(), EmployeeInfo::LEN);
+    strncpy(firstName, fn.c_str(), EmployeeInfo::LEN);
+    strncpy(idNumber, id.c_str(), EmployeeInfo::LEN);
 	this->s = s;
-	this->date = date;
+    strncpy(date, d.c_str(), EmployeeInfo::LEN);
 }
 
-
-string Employee::getLastName(){
+char* Employee::getLastName(){
 	return lastName;
 }
 
-string Employee::getFirstName(){
+char* Employee::getFirstName(){
 	return firstName;
 }
-string Employee::getIDNumber(){
+char* Employee::getIDNumber(){
 	return idNumber;
 }
-*/
 
 Employee::Sex Employee::getSex(){
 	return s;
 }
 
-/*
-string Employee::getDate(){
+char* Employee::getDate(){
 	return date;
 }
-*/
+
 
 Employee::employee_type Employee::get_type(){
     if(typeid(*this) == typeid(Faculty)){
@@ -60,31 +56,31 @@ Employee::employee_type Employee::get_type(){
     }
     cerr << "\nBad employee type";
     exit(1);
-};
-
-/*
-void Employee::setLastName(string lastName){
-	this->lastName = lastName;
 }
 
-void Employee::setFirstName(string firstName){
-	this->firstName = firstName;
+
+void Employee::setLastName(string ln){
+	strcpy(lastName, ln.c_str());
 }
 
-void Employee::setIDNumber(string idNumber){
-	this->idNumber = idNumber;
+void Employee::setFirstName(string fn){
+    strcpy(lastName, fn.c_str());
 }
-*/
+
+void Employee::setIDNumber(string id){
+    strcpy(lastName, id.c_str());
+}
+
 
 void Employee::setSex(Sex s){
 	this->s = s;
 }
 
-/*
-void Employee::setDate(string date){
-	this->date = date;
+
+void Employee::setDate(string d){
+    strcpy(lastName, d.c_str());
 }
-*/
+
 
 void Employee::getData(){
     cin.ignore(10, '\n');
@@ -191,9 +187,8 @@ void Employee::write(){
                 break;
         }                    //write employee object to file
         ouf.write( (char*)(employees[j]), size);
-        cout << "\nWrote to file successfully!";
         if(!ouf) {
-            cout << "\nCan't write to file\n";
+            cout << endl << j << ". Can't write to file\n";
             return;
         }
     }
@@ -207,6 +202,7 @@ void Employee::read(){
     inf.open("EMPLOY.DAT", ios::binary);
     if(!inf) {
         cout << "\nCan't open file\n"; return; }
+    employees.clear();
     currentNum = 0;                     //no employees in memory yet
     while(true) {                       //read type of next employee
         inf.read( (char*)&etype, sizeof(etype) );

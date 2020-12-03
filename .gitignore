@@ -33,3 +33,5 @@
 
 # Dev-C++ Compile
 *.win
+
+cmake-build-debug

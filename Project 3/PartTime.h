@@ -7,8 +7,8 @@
 
 class PartTime: public Staff {
 	public:
-		//PartTime();
-		//PartTime(string lastName, string firstName, string idNumber, Sex s, string date, double hourlyRate, int hoursPerWeek);
+		PartTime();
+		PartTime(string lastName, string firstName, string idNumber, Sex s, string date, double hourlyRate, int hoursPerWeek);
 		int getHoursPerWeek();
 		void setHoursPerWeek(int hoursPerWeek);
 		virtual double monthlyEarning();
